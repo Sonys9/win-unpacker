@@ -34,7 +34,7 @@ jobs:
         run: xwin --accept-license splat --output ~/.xwin
 
       - name: Build with cargo-xwin
-        run: cargo xwin build --target x86_64-pc-windows-msvc
+        run: cargo build --release --target x86_64-pc-windows-msvc
         
       - name: Fmt check
         run: cargo fmt --all -- --check
