@@ -2,11 +2,11 @@
 linker = "lld-link"
 
 rustflags = [
-    "-C", "link-arg=/LIBPATH:/home/freedomleaker/.xwin/crt/lib/x86_64",
-    "-C", "link-arg=/LIBPATH:/home/freedomleaker/.xwin/sdk/lib/um/x86_64",
-    "-C", "link-arg=/LIBPATH:/home/freedomleaker/.xwin/sdk/lib/ucrt/x86_64",
+    "-C", "link-arg=/LIBPATH:${HOME}/.xwin/crt/lib/x86_64",
+    "-C", "link-arg=/LIBPATH:${HOME}.xwin/sdk/lib/um/x86_64",
+    "-C", "link-arg=/LIBPATH:${HOME}.xwin/sdk/lib/ucrt/x86_64",
     "-C", "link-arg=-nodefaultlib",
-    "-C", "link-arg=-entry:fuck_you_reverse_engineer",
+    "-C", "link-arg=-entry:catch_me_if_you_can",
     "-C", "link-arg=-opt:ref,icf",
     "-C", "link-arg=-subsystem:console",
 ]
