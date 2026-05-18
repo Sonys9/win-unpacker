@@ -1,0 +1,33 @@
+1 MAINICON "assets/icon.ico"
+
+1 VERSIONINFO
+FILEVERSION 1,0,26,1402
+PRODUCTVERSION 1,0,26,1402
+FILEFLAGSMASK 0x3fL
+FILEFLAGS 0x0L
+FILEOS 0x40004L
+FILETYPE 0x1L
+FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "Uncr@ck@b1e Team"
+            VALUE "FileDescription", "You cant cr@ck this app!"
+            VALUE "FileVersion", "1,0,26,1402"
+            VALUE "InternalName", "uncrapp"
+            VALUE "LegalCopyright", "Copyright (C) 2026 Uncr@ck@b1e Corporation. All rights reserved."
+            VALUE "OriginalFileName", "uncrapp.exe"
+            VALUE "ProductName", "Uncr@ck@b1e App"
+            VALUE "ProductVersion", "1.0.26.1402"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 0x4B0
+    END
+END
+
+101 IMAGE "assets/dog.jpg"
+102 IMAGE "assets/dog2.jpeg"
