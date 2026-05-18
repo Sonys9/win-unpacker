@@ -45,13 +45,11 @@ fn main() {
         .map(|(i, &byte)| byte ^ key[i % key.len()])
         .collect();
 
-    let out_dir = std::env::var("OUT_DIR").unwrap();
-    let dest_path = Path::new(&out_dir).join("encrypted_shellcode.bin");
     
-    File::create(&dest_path)
+    File::create("encrypted_shellcode.bin")
         .expect("Failed to create encrypted_shellcode.bin")
         .write_all(&encrypted_shellcode)
-        .expect("Failed to write encrypted data");
+        .expect("Failed to write data");
     
     let out_dir = env::var("OUT_DIR").unwrap();
     let res_file = format!("{}/resources.res", out_dir);
