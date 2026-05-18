@@ -25,3 +25,5 @@ encrypted_app/target
 
 .xwin-cache
 encrypted_app/.xwin-cache
+shellcode.bin
+encrypted_shellcode.bin
